@@ -9,13 +9,13 @@ def bar_plot():
 
     plt.figure(1)
     l=[1,2,3,4,5,6]
-    h=[10,20,30,40,50,60]
+    h=[13,16.9,11.75,13.9,14.85,14.6]
     w=0.5
 
     plt.bar(l,h,w,color='b')
 
     plt.xlim(0.5,7)
-    plt.ylim(0,70)
+    plt.ylim(0,18)
     plt.title('Compare rate of different single-thread download tools.')
     plt.xlabel('Linux download tools.')
     plt.ylabel('Download rate.(s)')
