@@ -1,0 +1,6 @@
+# emacs temp files.
+*~
+
+# gen txt files.
+*.txt
+
