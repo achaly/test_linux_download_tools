@@ -9,11 +9,11 @@ echo 'download tools: wget curl axel myget mget prozilla linuxdown aget.'
 echo ''
 
 #download times.
-num=20
+num=2
 
 qqdownload='http://dldir1.qq.com/qqfile/qq/QQ6.1/11905/QQ6.1.exe'
-wifidownload='http://192.168.43.1:8888/download_file_20'
-filedownload='download_file_20'
+wifidownload='http://192.168.43.1:8888/download_file_1000'
+filedownload='download_file_1000'
 
 download=$wifidownload
 
