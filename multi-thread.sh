@@ -9,14 +9,17 @@ echo 'download tools: axel myget mget prozilla linuxdown aget.'
 echo ''
 
 #download times.
-num=15
+num=50
 
 #total threads num.
 threads=10
 
+#server port
+port=48161
+
 qqdownload='http://dldir1.qq.com/qqfile/qq/QQ6.1/11905/QQ6.1.exe'
-wifidownload='http://192.168.43.1:8888/download_file_200'
-filedownload='download_file_200'
+wifidownload='http://192.168.43.1:'$port'/download_file_5'
+filedownload='download_file_5'
 
 download=$wifidownload
 
