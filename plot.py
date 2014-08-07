@@ -32,7 +32,15 @@ multi_avg_200=[
 #89.1538 79.0769 77.6154 83.6923 82 83.1538 81.9231 90.0769 82.8462 82.3846 
 #88.7692 79.7692 73.5385 82.3846 82.5385 82.3846 82.1538 80.0769 83.0769 85
 
+multi_avg_200_5g=[
+    [176.375, 125.25, 88, 73.375, 69.75, 66.5, 68.5, 63.125, 66.25, 68.75],
+    [177.625, 198.625, 174.5, 153.5, 156.5, 148.875, 158, 113.625, 126.375, 164.375],
+    [174.625, 192.375, 173.25, 137.25, 154.125, 151.75, 159.625, 89, 118.625, 157.875]
+]
 
+#176.375 125.25 88 73.375 69.75 66.5 68.5 63.125 66.25 68.75 
+#177.625 198.625 174.5 153.5 156.5 148.875 158 113.625 126.375 164.375 
+#174.625 192.375 173.25 137.25 154.125 151.75 159.625 89 118.625 157.875
 
 def single_bar_plot(fig,height,ylimit):
     plt.figure(fig)
@@ -64,7 +72,8 @@ def multi_fig_plot(fig,m,y0,ylimit):
     plt.title('Compare rate of different multi-thread download tools.')
     plt.xlabel('Numbers of threads.')
     plt.ylabel('Download time of different download tools.')
-    plt.legend(loc='upper left')
+#    plt.legend(loc='upper left')
+    plt.legend(loc='upper right')
     plt.show()
 
 
@@ -76,3 +85,4 @@ if __name__ == '__main__':
 
     multi_fig_plot(5,multi_avg_5,0,8)
     multi_fig_plot(6,multi_avg_200,40,120)
+    multi_fig_plot(7,multi_avg_200_5g,40,240)
